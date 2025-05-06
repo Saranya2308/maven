@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from your Git repository
-                git url: 'https://github.com/Saranya2308/maven.git'
+                git url: 'https://github.com/Saranya2308/maven.git', branch: 'main' 
             }
         }
 
