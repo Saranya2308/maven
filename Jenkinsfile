@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the project using Maven and skip tests
-                sh './mvnw clean package -DskipTests'
+                bat './mvnw clean package -DskipTests'
             }
         }
 
         stage('Test') {
             steps {
                 // Run tests (optional, you can remove or comment this if not required)
-                sh './mvnw test'
+                bat './mvnw test'
             }
         }
         
