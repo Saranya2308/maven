@@ -12,7 +12,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the project using Maven and skip tests
-                bat './mvnw clean package -DskipTests'
+                bat 'mvnw clean package -DskipTests'
+
             }
         }
 
